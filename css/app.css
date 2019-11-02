@@ -425,14 +425,27 @@ main {
   z-index: 1;
 }
 
+main #imagenes {
+  display: none;
+  position: relative;
+  top: 80px;
+  width: 100%;
+  height: 80vh;
+}
+
+main #imagenes h1 {
+  margin-top: 40px;
+  text-align: center;
+}
+
 main #home {
   position: relative;
   top: 0px;
   width: 100%;
-  height: 82vh;
+  height: 75vh;
   background-image: url("../assets/img/img-portada01.jpg");
-  background-size: cover;
-  background-position-y: top;
+  background-size: 100%;
+  background-position-y: 80px;
   background-attachment: fixed;
 }
 
@@ -542,6 +555,7 @@ article p {
   margin: 15px 25px;
   text-align: justify;
   font-size: 1.2em;
+  font-weight: lighter;
 }
 
 #home:before {
@@ -586,6 +600,7 @@ footer {
   position: relative;
   width: 100%;
   height: 100px;
+  padding-top: 10px;
   background-color: #363d45;
   display: -webkit-box;
   display: flex;
@@ -597,7 +612,7 @@ footer {
 }
 
 footer .compartir {
-  flex-basis: 60%;
+  flex-basis: 55%;
 }
 
 footer .compartir p {
@@ -633,7 +648,7 @@ footer .compartir .redes .twitter {
 }
 
 footer .tlf {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 footer .tlf p {

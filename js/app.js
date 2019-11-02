@@ -13,7 +13,9 @@ const iconMenu = document.querySelector('.bars'),
     $TitleDos = document.querySelector('.Title-dos'),
     $TitleTres = document.querySelector('.Title-tres'),
     $btnSend = document.getElementById('btn-send'),
-    $body = document.getElementById('body');
+    $body = document.getElementById('body'),
+    $Principal = document.getElementById('principal'),
+    $Img = document.getElementById('imagenes');
 
 let menuActive = false;
 iconMenu.addEventListener('click', activarMenu);
@@ -59,7 +61,6 @@ $btnSend.addEventListener('click', function() {
 
 function activarMenu() {
     if (!menuActive) {
-        // translateLi();
         $menu.classList.remove('plegar-menu');
 
         iconMenu.classList.add('iconActive');
@@ -110,14 +111,17 @@ function activarMenu() {
     }
 }
 
-function translateLi() {
-    let delay = .1;
-    for (const li of $lista) {
-        li.style.transitionDelay = `${delay}s`;
-        li.style.transitionDuration = '.1s';
-        li.style.transform = 'translateX(20px)';
-        delay += .1;
-        console.log(delay);
-        console.log(li);
+function cambiarVista(vista) {
+    if (vista === 'img') {
+        $Img.style.display = 'block';
+        $Principal.style.display = 'none';
+        $btnSend.style.zIndex = '-1';
+        activarMenu();
+    } else {
+        $Img.style.display = 'none';
+        $Principal.style.display = 'block';
+        $btnSend.style.zIndex = '10000';
+        activarMenu();
+        // window.location.href = 'index.html';
     }
 }
