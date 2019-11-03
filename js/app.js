@@ -38,21 +38,21 @@ document.addEventListener('scroll', function() {
         iconMenu.classList.remove('sub-icon-menu');
     }
 
-    if (window.scrollY > 300) {
+    if (window.scrollY > 370) {
         $TitleDos.classList.add('Title-uno');
     }
-    if (window.scrollY > 315) {
+    if (window.scrollY > 430) {
         $textoDos.classList.add('elevator');
     }
-    if (window.scrollY > 730) {
+    if (window.scrollY > 1070) {
         $TitleTres.classList.add('Title-uno');
     }
-    if (window.scrollY > 800) {
+    if (window.scrollY > 1120) {
         $textoTres.classList.add('elevator');
     }
 
     // console.log(window.scrollY);
-    // console.log($lineUno.getBoundingClientRect());
+    // console.log($TitleDos.getBoundingClientRect());
 })
 $btnSend.addEventListener('click', function() {
     console.log('hover');
