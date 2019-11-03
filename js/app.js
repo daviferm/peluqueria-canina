@@ -51,7 +51,7 @@ document.addEventListener('scroll', function() {
         $textoTres.classList.add('elevator');
     }
 
-    // console.log(window.scrollY);
+    console.log(window.scrollY);
     // console.log($TitleDos.getBoundingClientRect());
 })
 $btnSend.addEventListener('click', function() {
