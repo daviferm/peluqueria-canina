@@ -17,6 +17,17 @@ const iconMenu = document.querySelector('.bars'),
     $Principal = document.getElementById('principal'),
     $Img = document.getElementById('imagenes');
 
+function isMobile() {
+    return (
+        (navigator.userAgent.match(/Android/i)) ||
+        (navigator.userAgent.match(/webOS/i)) ||
+        (navigator.userAgent.match(/iPhone/i)) ||
+        (navigator.userAgent.match(/iPod/i)) ||
+        (navigator.userAgent.match(/iPad/i)) ||
+        (navigator.userAgent.match(/BlackBerry/i))
+    );
+}
+
 let menuActive = false;
 iconMenu.addEventListener('click', activarMenu);
 document.addEventListener('scroll', function() {
@@ -51,7 +62,7 @@ document.addEventListener('scroll', function() {
         $textoTres.classList.add('elevator');
     }
 
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     // console.log($TitleDos.getBoundingClientRect());
 })
 $btnSend.addEventListener('click', function() {
