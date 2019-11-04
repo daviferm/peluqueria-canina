@@ -309,11 +309,14 @@ h1 {
   color: #292525;
 }
 
-p,
 h2,
 h3 {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: lighter;
+}
+
+p {
+  font-family: 'Open Sans', 'sans-serif';
 }
 
 header {
@@ -487,7 +490,7 @@ main #title h2 {
 
 main #card-servicio {
   text-align: center;
-  padding: 1em 1em;
+  padding: 1em .5em;
   width: 96%;
   margin: 0px auto;
   margin-bottom: 15px;
@@ -718,6 +721,39 @@ footer .tlf p a {
   animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
 }
 
 .btn-contacto {

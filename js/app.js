@@ -15,7 +15,10 @@ const iconMenu = document.querySelector('.bars'),
     $btnSend = document.getElementById('btn-send'),
     $body = document.getElementById('body'),
     $Principal = document.getElementById('principal'),
-    $Img = document.getElementById('imagenes');
+    $Img = document.getElementById('imagenes'),
+    $lineUno = document.getElementById('line-uno'),
+    $lineDos = document.getElementById('line-dos'),
+    $lineTres = document.getElementById('line-tres');
 
 function isMobile() {
     return (
@@ -34,6 +37,7 @@ document.addEventListener('scroll', function() {
     // Posición en pixeles de la distancia recorrida del scroll
     if (window.scrollY > 80) {
         $textoUno.classList.add('elevator');
+        $lineUno.classList.add('fadeInLeft');
     }
     // Plegar el header
     if (window.scrollY > 135) {
@@ -54,12 +58,15 @@ document.addEventListener('scroll', function() {
     }
     if (window.scrollY > 430) {
         $textoDos.classList.add('elevator');
+        $lineDos.classList.add('fadeInLeft');
     }
     if (window.scrollY > 1070) {
         $TitleTres.classList.add('Title-uno');
     }
     if (window.scrollY > 1120) {
         $textoTres.classList.add('elevator');
+        $lineTres.classList.add('fadeInLeft');
+
     }
 
     // console.log(window.scrollY);
