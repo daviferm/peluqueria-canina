@@ -486,8 +486,7 @@ main #title h2 {
 
 main #card-servicio {
   text-align: center;
-  padding: 1em 4px;
-  padding-bottom: .2em;
+  padding: 1em 1em;
   width: 96%;
   margin: 0px auto;
   margin-bottom: 15px;
@@ -523,6 +522,10 @@ main #card-servicio article .line {
   height: 5px;
   margin-left: 25px;
   background: #32b679;
+}
+
+#text-tres {
+  padding-bottom: 1.4em;
 }
 
 .pointer {
@@ -875,6 +878,6 @@ footer .tlf p a {
   }
   .icon-2,
   .icon-3 {
-    top: -50px;
+    top: 0px;
   }
 }
