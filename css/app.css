@@ -478,9 +478,10 @@ main #home article h1 {
 }
 
 main #title {
-  width: 100%;
+  width: 90%;
   height: 80px;
   margin-top: 20px;
+  margin-left: 5%;
   background-color: transparent;
 }
 
