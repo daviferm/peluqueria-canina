@@ -480,8 +480,7 @@ main #home article h1 {
 main #title {
   width: 90%;
   height: 80px;
-  margin-top: 20px;
-  margin-left: 5%;
+  margin: 20px 5% 5px 5%;
   background-color: transparent;
 }
 
