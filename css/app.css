@@ -874,6 +874,13 @@ footer .tlf p a {
     border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.2);
   }
+  main #home:before {
+    background-color: whitesmoke;
+    z-index: 99999;
+  }
+  main #home:after {
+    z-index: 99999;
+  }
 }
 
 @media screen and (min-width: 760px) {
@@ -891,6 +898,13 @@ footer .tlf p a {
     height: 100%;
     border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.2);
+  }
+  main #home:before {
+    background-color: whitesmoke;
+    z-index: 99999;
+  }
+  main #home:after {
+    z-index: 99999;
   }
 }
 
