@@ -886,7 +886,7 @@ footer .tlf p a {
 @media screen and (min-width: 760px) {
   main #home {
     background-image: url("../assets/img/img-portada04.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-position-y: 60px;
   }
   main #home article:before {
