@@ -18,7 +18,9 @@ const iconMenu = document.querySelector('.bars'),
     $Img = document.getElementById('imagenes'),
     $lineUno = document.getElementById('line-uno'),
     $lineDos = document.getElementById('line-dos'),
-    $lineTres = document.getElementById('line-tres');
+    $lineTres = document.getElementById('line-tres'),
+    $btnCookies = document.getElementById('btn-cookies'),
+    $cookies = document.getElementById('cookies');
 
 function isMobile() {
     return (
@@ -30,6 +32,14 @@ function isMobile() {
         (navigator.userAgent.match(/BlackBerry/i))
     );
 }
+if (sessionStorage.getItem('msg-cookies')) {
+    $cookies.style.display = 'none';
+}
+
+$btnCookies.addEventListener('click', function() {
+    $cookies.classList.add('out-cookies');
+    sessionStorage.setItem('msg-cookies', true);
+})
 
 let menuActive = false;
 iconMenu.addEventListener('click', activarMenu);
