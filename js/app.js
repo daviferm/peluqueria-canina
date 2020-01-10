@@ -22,16 +22,7 @@ const iconMenu = document.querySelector('.bars'),
     $btnCookies = document.getElementById('btn-cookies'),
     $cookies = document.getElementById('cookies');
 
-function isMobile() {
-    return (
-        (navigator.userAgent.match(/Android/i)) ||
-        (navigator.userAgent.match(/webOS/i)) ||
-        (navigator.userAgent.match(/iPhone/i)) ||
-        (navigator.userAgent.match(/iPod/i)) ||
-        (navigator.userAgent.match(/iPad/i)) ||
-        (navigator.userAgent.match(/BlackBerry/i))
-    );
-}
+
 if (sessionStorage.getItem('msg-cookies')) {
     $cookies.style.display = 'none';
 }
