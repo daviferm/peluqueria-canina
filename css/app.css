@@ -36,6 +36,7 @@
 }
 
 .list ul li .list-a {
+  position: relative;
   text-decoration: none;
   font-size: 1.2em;
   background-color: #dad3d3;
@@ -45,6 +46,12 @@
   padding: .5em 0;
   border-radius: 8px;
   outline: none;
+}
+
+.list ul li .list-a i {
+  position: absolute;
+  top: 10px;
+  left: 20px;
 }
 
 .list ul li .list-b {
@@ -1030,5 +1037,15 @@ footer .tlf p a {
   .icon-2,
   .icon-3 {
     top: 0px;
+  }
+  footer {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  footer .compartir {
+    flex-basis: 35%;
+  }
+  footer .tlf {
+    flex-basis: 15%;
   }
 }
